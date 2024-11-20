@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Ruluda-Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <a href="http://127.0.0.1:5500/challenge-AluraGeek.html">
+            <img src="./assets/Ruluda-logo.png" alt="Logo Ruluda-Store" class="logo">
+        </a>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Buscar..." data-busqueda>
+            <button class="btn-buscar" data-boton-busqueda><i class="fa-solid fa-magnifying-glass icon"></i></button>
+            <button class="btn-carrito"><i class="fa fa-shopping-cart  icon"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="productos">
+            <h1>MIS PRODUCTOS:</h1>
+            <div class="cards">
+                <ul class="descripcion-productos" alt=" Productos Ruluda" data-lista>                    
+                </ul>
+            </div>
+        </section>
+
+        <section class="formulario-productos" data-formulario>
+            <h1> AGREGAR PRODUCTO: </h1>
+            <form class="formulario">
+                <input type="text" placeholder="Nombre.." data-nombre>  
+                <input type="number" placeholder="Precio.." data-precio>
+                <input type="url" placeholder="Url imagen.." data-url-imagen>  
+                <div class="botones">
+                    <button class="btn" type="submit">Agregar</button> 
+                    <button class="btn" type="reset">Limpiar</button> 
+                </div>
+            </form> 
+        </section>
+        
+    </main>
+    <footer>
+        <a href="http://127.0.0.1:5500/challenge-AluraGeek.html">
+            <img src="./assets/Ruluda-logo.png" alt="Logo Ruluda-Store" class="logo">
+        </a>
+        <p>&copy; Copyrigth Ruluda Store - 2024 - Desarrollado por Carolina Chavez</p>
+    </footer>
+    <script src="./js/mostrarProductos.js" type="module"></script>
+    <script src="./js/crearProducto.js" type="module"></script>
+    <script src="./js/buscarProducto.js" type="module"></script>
+</body>
+</html>

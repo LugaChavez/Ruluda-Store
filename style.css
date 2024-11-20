@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/*Variables*/
+:root {
+--color1:#e1c1bb;
+--color2:#ddc3bc;
+--color3:#9d8ea4;
+--color4:#947787;
+--color5:#908D8C;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 300;
+}
+
+html,body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+}
+/*Seccion HEADER*/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:var(--color1);
+    padding: 15px 0;
+}
+
+.logo {
+    width:200px;
+    height: 100px;
+    margin-right: 20px;   
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#search-input {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #d3d3d3; /* Gris claro */
+    background-color: #fff;
+    color: #333;
+    font-size: 1em;
+    width: 220px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    caret-color: #56d8e4;
+}
+
+#search-input:focus {
+    border-color: #808080; /* Gris oscuro */
+    box-shadow: 0 0 5px rgba(128, 128, 128, 0.3);
+}
+
+.btn-buscar, .btn-carrito, .btn-eliminar {
+    padding: 10px;
+    background-color: transparent; /* Gris oscuro */
+    border-radius: 50%;
+    border: none;
+    color:#333;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-buscar:hover, .btn-carrito:hover, .btn-eliminar:hover {
+    transform: scale(1.2);
+    background-color: #54545454; /* Gris más oscuro */
+}
+
+.fa-shopping-cart, .fa-magnifying-glass{
+    font-size: 25px; 
+}
+
+/*MAIN*/
+
+main {
+    flex: 1;
+    background: whitesmoke;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+h1 {
+    background: -webkit-linear-gradient(right, #56d8e4, #908D8C, #56d8e4, #908D8C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+}
+
+/* Sección Productos */
+.productos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+    width: 85%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards p {
+    font-size: 26px;
+    color: #34495E;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 500;
+}
+
+.descripcion-productos {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    border-radius: 10px;
+    list-style: none;
+    flex: 1 0 22%;
+    margin: 0 0 20px 0;
+    padding: 10px;
+    background-color: #FFF;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.50);
+    font-size:30px;
+}
+
+img {
+    width: 300px;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.fa-trash {
+    font-size: 1.6em;
+    color: #E67E22;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.fa-trash:hover {
+    color: #D35400;
+}
+
+/*seccion formulario*/
+
+.formulario-productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    width:580px;
+    height: 420px;
+}
+
+.formulario input {
+    border-radius: 35px;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 390px;
+    height: 58px;
+    padding: 12px; /* Añade este padding para separar el texto del borde */
+    flex-grow: 1;
+    caret-color: #56d8e4;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 12px;
+    align-items: center;
+}
+
+/* Botones */
+.btn {
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 15px;
+    width: 170px;
+    height: 55px;
+    transition: 
+        scale 0.25s ease-in,
+        opacity 0.25s ease-in,
+        filter 0.25s ease-in;
+    &:hover {
+        scale: 1.1;
+        font-weight: 500;
+        color: white;
+        background-color:var(--color5);
+        
+    }
+}
+
+/* Sección Footer */
+
+footer {
+    background: var(--color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    bottom: 0;
+}
+
+footer p{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+
+}
+
+/* RESPOSIVE*/
+
+@media (max-width: 768px){
+    
+    header {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    header .logo{
+        width: 70%;
+    }
+
+    .search-container{
+        justify-content: center;
+        width: auto;
+    }
+    
+    .search-input{
+        width: auto;
+    }
+    
+    main{
+        flex-direction:column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    li{
+        flex: 1 0 30%; /*ajusta la cantidad de elementos en la columna cambiar a 1 0 30% para moviles*/
+    }
+
+    .productos{
+        width: 100%;
+        margin-top: 60px;
+    }
+
+   .formulario-productos {
+        width: 90%; /* O cualquier porcentaje que desees */
+    }
+
+    .formulario{
+        width: 90%;
+    }
+
+   .formulario input{
+        width: 100%; /* Cambiar a un ancho más adecuado */
+        max-width: 700px;
+        height: 58px; /* Mantener la altura adecuada */
+        padding: 10px; /* Mantener el padding */
+        font-size: 16px; /* Mantener el tamaño de fuente */
+        box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
+    }
+    
+    .btn {
+        font-size: 14px; /* Reducir tamaño de fuente */
+        width: 140px; /* Reducir el ancho del botón */
+        height: 45px; /* Reducir la altura del botón */
+        margin: 3px; /* Reducir el margen entre los botones */
+    }
+    
+    footer p{
+        flex-direction: column;
+        text-align: center;
+    }
+}
