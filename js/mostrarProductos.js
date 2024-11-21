@@ -22,7 +22,7 @@ export default function crearCard(id,imagen,nombre,precio){
     producto.innerHTML=`
     <img src="${imagen}" alt="imagen producto">
     <p>${nombre}</p>
-    <h2>${precioFormateado}</h2>
+    <h2>${precioFinal}</h2>
     <button class="btn-eliminar"><i class="fa-solid fa-trash icon" alt="icono eliminar"></i></button>
     `;
 
