@@ -4,7 +4,14 @@ const lista = document.querySelector("[data-lista]");
 
 // Función para formatear el precio
 function formatearPrecio(precio) {
+        // Convertir precio a número si es necesario
     precio = Number(precio);
+
+    // Verificar si el precio es un número válido
+    if (isNaN(precio)) {
+        console.error("El precio no es un número válido");
+        return ""; // Retorna una cadena vacía si no es un número
+    }
     return new Intl.NumberFormat("es-AR").format(precio); // Formato de número con separadores de miles
 }
 
