@@ -31,7 +31,7 @@ async function agregarProducto(nombre,precio,imagen) {
 
 async function buscarProducto(palabraClave){
     
-    try {const conexion = await fetch( 'https://lugachavez.github.io/Ruluda-Store/json/db.json?q=${palabraClave}`);
+    try {const conexion = await fetch(`https://lugachavez.github.io/Ruluda-Store/json/db.json?q=${palabraClave}`);
     const conexionConvertida = await conexion.json();
 
     console.log(conexionConvertida); 
