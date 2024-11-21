@@ -15,7 +15,8 @@ async function buscarProducto(evento) {
     busqueda.forEach(producto=>lista.appendChild(crearCard(producto.precio,producto.imagen,producto.nombre)));
    
     if(busqueda.length==0){
-        lista.innerHTML=`<h2 class="mensaje__titulo">No se encontro ningún producto para ${datosDeBusqueda}</h2>`;}
+        lista.innerHTML=`<h2 class="mensaje__titulo">No se encontro ningún producto para ${datosDeBusqueda}</h2>`;
+    }
     //console.log(busqueda);
 }
 const boton=document.querySelector("[data-boton-busqueda]");
