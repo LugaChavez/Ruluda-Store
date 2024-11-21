@@ -4,22 +4,9 @@ const lista = document.querySelector("[data-lista]");
 
 // Función para formatear el precio
 function formatearPrecio(precio) {
-      precio = Number(precio);
-
-    // Verificar si el precio es un número válido
-    if (isNaN(precio)) {
-        console.error("El precio no es un número válido");
-        return ""; // Retorna una cadena vacía si no es un número
-    }
-        // Convertir precio a número si es necesario
-    return new Intl.NumberFormat("es-AR").format(precio); // Formato de número con separadores de miles
-
-        // Formatear el precio
-const precioFormateado = formatearPrecio(precio);
-
-// Crear el objeto precioFinal
-const precioFinal = { simbolo: "$", precio: precioFormateado };
-
+      
+// Convertir precio a número si es necesario
+     return new Intl.NumberFormat("es-AR").format(precio); // Formato de número con separadores de miles
 }
 
 export default function crearCard(id,imagen,nombre,precio){
@@ -28,7 +15,7 @@ export default function crearCard(id,imagen,nombre,precio){
     producto.dataset.id = id;  // Guardamos el id en un atributo 'data-id'
 
     // Formatear el precio antes de mostrarlo
-    //const precioFormateado = "$" + formatearPrecio(precio);
+    const precioFormateado = "$",formatearPrecio(precio);
 
     producto.innerHTML=`
     <img src="${imagen}" alt="imagen producto">
