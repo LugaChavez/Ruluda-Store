@@ -13,16 +13,14 @@ export default function crearCard(id,imagen,nombre,precio){
     const producto= document.createElement("li");
     producto.className="productos__item";
     producto.dataset.id = id;  // Guardamos el id en un atributo 'data-id'
-
-     // Formatear el precio
-  const precioFormateado = formatearPrecio(precio);
+      
     // Formatear el precio antes de mostrarlo
-    const precioFinal= {símbolo: "$", precio: precioFormateado};
+    const precioFormateado= {símbolo: "$", precio: precioFormateado};
 
     producto.innerHTML=`
     <img src="${imagen}" alt="imagen producto">
     <p>${nombre}</p>
-    <h2>${precioFinal}</h2>
+    <h2>${precioFormateado}</h2>
     <button class="btn-eliminar"><i class="fa-solid fa-trash icon" alt="icono eliminar"></i></button>
     `;
 
