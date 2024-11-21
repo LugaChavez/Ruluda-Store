@@ -4,6 +4,7 @@ const lista = document.querySelector("[data-lista]");
 
 // Función para formatear el precio
 function formatearPrecio(precio) {
+    precio = Number(precio);
     return new Intl.NumberFormat("es-AR").format(precio); // Formato de número con separadores de miles
 }
 
