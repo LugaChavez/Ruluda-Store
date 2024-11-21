@@ -36,6 +36,9 @@ async function buscarProducto(palabraClave){
 
     console.log(conexionConvertida); 
 
+    if (conexion.ok) {
+        throw new Error("Mostrando resultados:");
+    }
     return conexionConvertida;
     }catch (error) { 
         console.error('Error al buscar productos:', error);
