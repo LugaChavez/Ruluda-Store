@@ -4,8 +4,6 @@ const lista = document.querySelector("[data-lista]");
 
 // Función para formatear el precio
 function formatearPrecio(precio) {
-      
-// Convertir precio a número si es necesario
      return new Intl.NumberFormat("es-AR").format(precio); // Formato de número con separadores de miles
 }
 
@@ -15,7 +13,7 @@ export default function crearCard(id,imagen,nombre,precio){
     producto.dataset.id = id;  // Guardamos el id en un atributo 'data-id'
       
     // Formatear el precio antes de mostrarlo
-    const precioFormateado= {símbolo: "$", precio: precioFormateado};
+    const precioFormateado= "$" + formatearPrecio(precio);
 
     producto.innerHTML=`
     <img src="${imagen}" alt="imagen producto">
