@@ -14,8 +14,10 @@ export default function crearCard(id,imagen,nombre,precio){
     producto.className="productos__item";
     producto.dataset.id = id;  // Guardamos el id en un atributo 'data-id'
 
+     // Formatear el precio
+  const precioFormateado = formatearPrecio(precio);
     // Formatear el precio antes de mostrarlo
-    const precioFormateado = "$",formatearPrecio(precio);
+    const precioFinal= {símbolo: "$", precio: precioFormateado};
 
     producto.innerHTML=`
     <img src="${imagen}" alt="imagen producto">
