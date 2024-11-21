@@ -1,0 +1,100 @@
+{
+    "productos": [
+        {
+            "id": "1",
+            "imagen": "https://acdn.mitiendanube.com/stores/001/423/621/products/skala-maracuja1-285024a84534b7eb0d16056471982257-1024-1024.webp",
+            "nombre": "Skala Maracujá",
+            "precio": 6600
+        },
+        {
+            "id": "2",
+            "imagen": "https://skalatratamientos.com/wp-content/uploads/2022/03/skala-divino-potao-300x300.png",
+            "nombre": "Skala Divino Potäo",
+            "precio": 6600
+        },
+        {
+            "id": "3",
+            "imagen": "https://skalatratamientos.com/wp-content/uploads/2022/03/skala-mais-cachos-tratamiento-300x300.png",
+            "nombre": "Skala Mais Cachos",
+            "precio": 6600
+        },
+        {
+            "id": "4",
+            "imagen": "https://http2.mlstatic.com/D_NQ_NP_862587-MLU72639787045_112023-O.webp",
+            "nombre": "Skala Potäo do Amor",
+            "precio": 6600
+        },
+        {
+            "id": "5",
+            "imagen": "https://th.bing.com/th/id/OIP.IOhYW8ld52DAWFndcUyIowAAAA?pid=ImgDet&w=300&h=300&c=7",
+            "nombre": "Cepillo Pulpo",
+            "precio": 5990
+        },
+        {
+            "id": "6",
+            "imagen": "https://rizosperu.com/wp-content/uploads/2023/02/denman-3-300x300.png",
+            "nombre": "Cepillo 9 hileras",
+            "precio": 8500
+        },
+        {
+            "id": "7",
+            "nombre": "Novex Meus Cachos",
+            "precio": 10800,
+            "imagen": "https://th.bing.com/th/id/OIP.s4CzUKpdaq24f1yBO9XxnQHaHa?w=202&h=202&c=7&r=0&o=5&pid=1.7"
+        },
+        {
+            "id": "8",
+            "nombre": "Novex Meus Cahos de Cinema",
+            "precio": 10800,
+            "imagen": "https://th.bing.com/th/id/OIP.qi0GD-ZnpQkg2uj-kduX-QHaHa?w=183&h=183&c=7&r=0&o=5&pid=1.7"
+        },
+        {
+            "id": "9",
+            "nombre": "Cantu Moisturizing Twist & Lock Gel",
+            "precio": 58000,
+            "imagen": "https://cdn11.bigcommerce.com/s-63354/images/stencil/2560w/products/4345/8667/Cantu_For_Natural_Hair_Moisturizing_Twist_Lock_Gel_370g__45494.1612954046.jpg?c=2"
+        },
+        {
+            "id": "10",
+            "nombre": "Afro Love Curling Puree",
+            "precio": 15500,
+            "imagen": "https://th.bing.com/th/id/OIP.6oukYFuPdwX032-mNhSD-gHaHa?rs=1&pid=ImgDetMain"
+        },
+        {
+            "id": "11",
+            "nombre": "Afro & Rizo Co-Wash",
+            "precio": 16500,
+            "imagen": "https://www.rmhaircare.eu/images/productos/187/l_g75cxbm0rr6qciq37iwr.jpg"
+        },
+        {
+            "id": "12",
+            "nombre": "Cofia De Satin",
+            "precio": 9700,
+            "imagen": "https://http2.mlstatic.com/D_NQ_NP_843557-MLA47900504309_102021-O.webp"
+        },
+        {
+            "id": "13",
+            "nombre": "OGX + Renewing - Argan Oil of Morocco Shampoo",
+            "precio": 7000,
+            "imagen": "https://i5.walmartimages.com/seo/OGX-Renewing-Argan-Oil-of-Morocco-Moisturizing-Daily-Shampoo-13-fl-oz_be2664de-5c24-4d3f-b682-00f08c64295a.308bb60a60b5e7666ae2c1ca51a0ccb0.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF"
+        },
+        {
+            "nombre": "OGX  Argan Oil of Morocco Conditioner",
+            "precio": 7000,
+            "imagen": "https://th.bing.com/th/id/OIP.aEcJAJPWt4nUTCrNJNKBwwHaHa?w=214&h=214&c=7&r=0&o=5&pid=1.7",
+            "id": "14"
+        },
+        {
+            "nombre": "Creme Of Nature-  Argan Oil from Morocco Tratamiento Acondicionador Intensivo",
+            "precio": 17000,
+            "imagen": "https://cremeofnature.com/wp-content/uploads/2022/08/CON_Argan_ICT_12oz_REFRESH_AdReady_FINAL_980X980.png",
+            "id": "15"
+        },
+        {
+            "nombre": "Shea Moisture - Coconut & Hibiscus Defining Styling Gel",
+            "precio": 10000,
+            "imagen": "https://cdn.sanity.io/images/gsxasun1/sheamoisture-stg-us/baab533fc8b6009891732edcbb4d901e3744abad-5000x5000.png?w=600&amp;h=600&amp;q=75&amp;fit=max&amp;auto=format&amp;dpr=1.5",
+            "id": "W8BYPtm"
+        }
+    ]
+}
