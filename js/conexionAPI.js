@@ -1,5 +1,5 @@
 async function listarProductos(){
-    const conexion = await fetch("https://my-json-server.typicode.com/LugaChavez/Ruluda-Store/productos/",{
+    const conexion = await fetch("https://ruluda-store.vercel.app/api/post/",{
     method:"GET",
     headers:{
     "Content-type":"application/json"}
