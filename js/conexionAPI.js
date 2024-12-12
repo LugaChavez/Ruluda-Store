@@ -47,7 +47,8 @@ async function eliminarProducto(id) {
     const conexion = await fetch(`https://my-json-server.typicode.com/LugaChavez/Ruluda-Store/productos/{id}`, {
         method: "DELETE",
         headers: {
-            "Content-type": "application/json"
+            "Content-type": "application/json",
+            id:id
         }
     });
 
