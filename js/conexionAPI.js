@@ -1,5 +1,5 @@
 async function listarProductos(){
-    const conexion = await fetch("https://ruluda-store.vercel.app/api/post/",{
+    const conexion = await fetch("http://localhost:3001/productos",{
     method:"GET",
     headers:{
     "Content-type":"application/json"}
@@ -11,7 +11,7 @@ async function listarProductos(){
 }
 
 async function agregarProducto(nombre,precio,imagen) {
-    const conexion= await fetch ("https://ruluda-store.vercel.app/api/post/", {
+    const conexion= await fetch ("http://localhost:3001/productos", {
         method:"POST",
         headers:{"Content-type":"application/json"},
         body:JSON.stringify({
@@ -31,7 +31,7 @@ async function agregarProducto(nombre,precio,imagen) {
 
 async function buscarProducto(palabraClave){
     
-    try {const conexion = await fetch(`https://ruluda-store.vercel.app/api/post?q=${palabraClave}`);
+    try {const conexion = await fetch(`http://localhost:3001/productos?q=${palabraClave}`);
     const conexionConvertida = await conexion.json();
 
     console.log(conexionConvertida); 
@@ -44,7 +44,7 @@ async function buscarProducto(palabraClave){
 }
 
 async function eliminarProducto(id) {
-    const conexion = await fetch(`https://ruluda-store.vercel.app/api/post/${id}`, {
+    const conexion = await fetch(`http://localhost:3001/productos/${id}`, {
         method: "DELETE",
         headers: {
             "Content-type": "application/json"
