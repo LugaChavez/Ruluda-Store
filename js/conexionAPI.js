@@ -44,7 +44,7 @@ async function buscarProducto(palabraClave){
 }
 
 async function eliminarProducto(id) {
-    const conexion = await fetch(`https://my-json-server.typicode.com/LugaChavez/Ruluda-Store/productos/{id}`, {
+    const conexion = await fetch(`https://my-json-server.typicode.com/LugaChavez/Ruluda-Store/productos/${id}`, {
         method: "DELETE",
         headers: {
             "Content-type": "application/json",
