@@ -48,7 +48,9 @@ async function eliminarProducto(id) {
         method: "DELETE",
         headers: {
             "Content-type": "application/json",
-            id:id
+               body:JSON.stringify({
+                id:id
+        })
         }
     });
 
